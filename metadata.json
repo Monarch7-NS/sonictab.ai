@@ -1,0 +1,5 @@
+{
+  "name": "SonicTab AI",
+  "description": "Upload any audio file and let Gemini AI generate accurate guitar tablature instantly.",
+  "requestFramePermissions": []
+}
