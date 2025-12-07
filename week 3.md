@@ -33,13 +33,6 @@ This week marked a comprehensive overhaul of the project, including a major rebr
     3. AI Transcription
 - **Configuration:** Added `SongConfiguration` to inject metadata (Artist, BPM, Tuning) into the prompt context.
 - **Search Integration:** Enabled Google Search grounding to prioritize web research over hallucination.
-- Learned to optimize prompt engineering and leverage AI for rapid prototyping and debugging.
-- Gemini 2.5 Flash: Core logic engine for audio analysis and ASCII tablature generation.
-- Google Search Tool (Grounding): Used in AI prompt for live web data to improve accuracy.
-- AI Coding Assistant: Refactored project structure, debugged TypeScript errors, generated UI components.
-- Learned to optimize prompt engineering and leverage AI for rapid prototyping and debugging.
-- used gemini 3 pro for tailwind styling and learned so many styles and ways to style a landing page . 
-
 
 
 ---
@@ -62,7 +55,12 @@ This week marked a comprehensive overhaul of the project, including a major rebr
 - **AI Coding Assistant:** Generated the "Drop Zone" UI, debugged the Auth flow, and scaffolded the Express API routes.
 - **Google Search Tool:** Integrated for live web data grounding within the prompts.
 - **Lucide React:** Used for consistent UI iconography.
-
+- Learned to optimize prompt engineering and leverage AI for rapid prototyping and debugging.
+- Gemini 2.5 Flash: Core logic engine for audio analysis and ASCII tablature generation.
+- Google Search Tool (Grounding): Used in AI prompt for live web data to improve accuracy.
+- AI Coding Assistant: Refactored project structure, debugged TypeScript errors, generated UI components.
+- Learned to optimize prompt engineering and leverage AI for rapid prototyping and debugging.
+- used gemini 3 pro for tailwind styling and learned so many styles and ways to style a landing page . 
 ---
 
 ## 5. Individual Contributions
