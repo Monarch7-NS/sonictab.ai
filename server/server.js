@@ -13,9 +13,15 @@ app.use(cors());
 app.use(express.json());
 
 // Database Connection
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/tabsense')
-  .then(() => console.log('MongoDB Connected'))
-  .catch(err => console.error(err));
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/tabsense', {
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+})
+  .then(() => console.log('MongoDB Connected Successfully'))
+  .catch(err => {
+    console.error('MongoDB Connection Error:', err.message);
+    process.exit(1);
+  });
 
 // Middleware: Verify Token
 const auth = (req, res, next) => {
