@@ -9,23 +9,14 @@ This project is organized as a full-stack application.
 ```
 /
 ├── components/          # React UI Components
-│   ├── AudioRecorder.tsx
-│   ├── Header.tsx
-│   ├── Library.tsx
-│   ├── Login.tsx
-│   ├── SongConfiguration.tsx
-│   └── TabDisplay.tsx
-├── server/              # Backend API (Express + MongoDB)
+├── server/              # Backend API (Express + MongoDB) for production
 │   ├── models/          # Mongoose Schemas
-│   │   ├── Tab.js
-│   │   └── User.js
 │   └── server.js        # Express App Entry Point
 ├── services/            # Frontend Services
-│   ├── backend.ts       # API Client (Currently using LocalStorage Mock)
+│   ├── backend.ts       # Mock API Client (Simulates Backend in Browser)
 │   └── gemini.ts        # AI Generation Service
 ├── App.tsx             # Main Application Logic
 ├── index.html          # Entry Point
-├── index.tsx           # React Root
 └── types.ts            # TypeScript Definitions
 ```
 
@@ -37,10 +28,10 @@ The frontend is built with React, Tailwind CSS, and Vite.
 2. `npm run dev`
 
 ### Backend (Server)
-The `server/` folder contains the production-ready Node.js code requested.
+The `server/` folder contains the production-ready Node.js code.
 1. Navigate to `server/`
-2. `npm install express mongoose cors dotenv jsonwebtoken bcryptjs`
+2. `npm install`
 3. Create a `.env` file with `MONGODB_URI` and `JWT_SECRET`.
 4. Run `node server.js`
 
-> **Note:** The current live demo uses a **Mock Backend** (`services/backend.ts`) that simulates the Express/MongoDB behavior using browser LocalStorage so you can test the full flow (Login, Save, Library) without setting up a local database.
+> **Note:** The current live preview uses a **Mock Backend** (`services/backend.ts`) that simulates the Express/MongoDB behavior using browser LocalStorage so you can test the full flow without setting up a database.

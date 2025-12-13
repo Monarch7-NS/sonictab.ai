@@ -1,7 +1,0 @@
-{
-  "name": "tabsense_ai",
-  "description": "TabSense - The AI-powered guitar tablature studio. Listen, Research, Transcribe.",
-  "requestFramePermissions": [
-    "microphone"
-  ]
-}
