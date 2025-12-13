@@ -4,34 +4,45 @@ TabSense is an AI-powered guitar tablature studio that listens to audio, researc
 
 ## Project Structure
 
-This project is organized as a full-stack application.
+This project is organized into a consolidated Full-Stack structure:
 
 ```
 /
-├── components/          # React UI Components
-├── server/              # Backend API (Express + MongoDB) for production
-│   ├── models/          # Mongoose Schemas
-│   └── server.js        # Express App Entry Point
-├── services/            # Frontend Services
-│   ├── backend.ts       # Mock API Client (Simulates Backend in Browser)
-│   └── gemini.ts        # AI Generation Service
-├── App.tsx             # Main Application Logic
-├── index.html          # Entry Point
-└── types.ts            # TypeScript Definitions
+├── backend/             # Node.js & Express API
+│   ├── models/          # Mongoose Schemas (User.js, Tab.js)
+│   ├── db.js            # MongoDB Connection Logic
+│   └── server.js        # Server Entry Point & Routes
+├── frontend/            # React Frontend Source
+│   ├── components/      # UI Components (Visuals & Logic)
+│   ├── services/        # Service Layer
+│   │   ├── backend.ts   # API Client (Fetch Wrapper)
+│   │   └── gemini.ts    # AI Generation Service
+│   ├── App.tsx          # Main Application State
+│   └── types.ts         # TypeScript Definitions
+├── .env                 # API Keys & Config (Create this file!)
+├── index.html           # Application Entry Point
+└── vite.config.ts       # Build Configuration
 ```
 
 ## Setup & Installation
 
-### Frontend (Client)
-The frontend is built with React, Tailwind CSS, and Vite.
-1. `npm install`
-2. `npm run dev`
+### 1. Configuration (.env)
+Create a `.env` file in the root directory and add your keys:
 
-### Backend (Server)
-The `server/` folder contains the production-ready Node.js code.
-1. Navigate to `server/`
+```ini
+API_KEY=AIzaSy... (Your Google Gemini API Key)
+MONGODB_URI=mongodb://localhost:27017/tabsense
+JWT_SECRET=mysecretkey
+```
+
+### 2. Backend (Server)
+1. Navigate to `backend/`
 2. `npm install`
-3. Create a `.env` file with `MONGODB_URI` and `JWT_SECRET`.
-4. Run `node server.js`
+3. Run `node server.js`
+   * *Note: Ensure you have MongoDB installed and running locally, or update the MONGODB_URI.*
 
-> **Note:** The current live preview uses a **Mock Backend** (`services/backend.ts`) that simulates the Express/MongoDB behavior using browser LocalStorage so you can test the full flow without setting up a database.
+### 3. Frontend (Client)
+1. From the project root: `npm install`
+2. Run `npm run dev`
+
+The application uses a proxy to forward `/api` requests from the frontend (port 3000) to the backend (port 5000).
