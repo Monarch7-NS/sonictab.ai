@@ -53,8 +53,9 @@
   - Seeking guidance on best practice for audio file storage in production environment
 
 ## Link to Commits
-- github : [text](https://github.com/Monarch7-NS/sonictab.ai.git)
-git commit -m "feat: integrate full-stack architecture with Node.js/Express and MongoDB
+- github : https://github.com/Monarch7-NS/Tabsense.ai.git
+
+-git commit -m "feat: integrate full-stack architecture with Node.js/Express and MongoDB
 
 Major overhaul transitioning from client-side mock services to fully operational backend.
 
@@ -74,3 +75,5 @@ Documentation:
 - Add comprehensive System Architecture Report (Week 4)
 
 BREAKING CHANGE: Backend now requires MongoDB instance and .env configuration"
+
+- github : https://github.com/Monarch7-NS/Tabsense.ai.git

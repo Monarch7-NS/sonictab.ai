@@ -3,7 +3,7 @@
 **Team:** Anas Mohamed Draoui  
 **Date:** December 4, 2025  
 **Project:** TabSense (formerly SonicTab)  
-**Repository:** [GitHub Link](https://github.com/Monarch7-NS/sonictab.ai.git)
+**Repository:** [GitHub Link](https://github.com/Monarch7-NS/Tabsense.ai.git)
 
 ---
 
@@ -92,3 +92,5 @@ This week marked a comprehensive overhaul of the project, including a major rebr
 **Questions & Blockers:**
 - **Hosting:** Determining the best cost-effective platform for the Node.js backend (Render vs. Heroku).
 - **Storage:** Deciding on a strategy for storing audio files (AWS S3 vs. MongoDB GridFS) if persistence is required.
+
+- github : https://github.com/Monarch7-NS/Tabsense.ai.git

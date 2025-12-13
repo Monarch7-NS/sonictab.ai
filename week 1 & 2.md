@@ -55,4 +55,4 @@
 - [Fix: Revert to Gemini Flash 2.5 to fix Quota 429]
 - [Fix: Repair TuningConfig.tsx and remove ImportMaps]
 
-github : [text](https://github.com/Monarch7-NS/sonictab.ai.git)
+- github : https://github.com/Monarch7-NS/Tabsense.ai.git
