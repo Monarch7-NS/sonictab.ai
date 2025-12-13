@@ -54,3 +54,23 @@
 
 ## Link to Commits
 - github : [text](https://github.com/Monarch7-NS/sonictab.ai.git)
+git commit -m "feat: integrate full-stack architecture with Node.js/Express and MongoDB
+
+Major overhaul transitioning from client-side mock services to fully operational backend.
+
+Backend:
+- Initialize Express.js server with JWT authentication and bcrypt password hashing
+- Implement MongoDB connection via Mongoose with automated admin seeding
+- Create REST API endpoints for user auth (register/login) and tab CRUD operations
+- Add error handling middleware for consistent JSON responses
+
+Frontend:
+- Configure Vite proxy to bridge port 3000 -> 5000
+- Replace mock backend.ts with safeFetch utility for robust error handling
+- Implement secure environment variable loading via .env
+- Fix module resolution conflicts in index.html
+
+Documentation:
+- Add comprehensive System Architecture Report (Week 4)
+
+BREAKING CHANGE: Backend now requires MongoDB instance and .env configuration"
