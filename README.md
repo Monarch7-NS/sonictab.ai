@@ -2,6 +2,8 @@
 
 TabSense is an AI-powered guitar tablature studio that listens to audio, researches official charts online, and generates professional ASCII tabs using the Gemini Flash 2.5 model.
 
+
+
 ## Project Structure
 
 This project is organized into a consolidated Full-Stack structure:
