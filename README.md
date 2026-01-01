@@ -4,6 +4,10 @@ TabSense is an AI-powered guitar tablature studio that listens to audio, researc
 
 
 
+
+
+
+
 ## Project Structure
 
 This project is organized into a consolidated Full-Stack structure:
