@@ -68,7 +68,7 @@ export const Header: React.FC<HeaderProps> = ({ user, onLogout, onNavigateLibrar
            ) : (
               <div className="flex items-center space-x-2 bg-white/5 border border-white/10 px-3 py-1.5 rounded-full hover:bg-white/10 transition-colors cursor-help">
                   <Zap className="w-3.5 h-3.5 text-sense-glow fill-current" />
-                  <span className="text-xs font-medium text-sense-glow tracking-wide">Gemini Flash 2.5</span>
+                  <span className="text-xs font-medium text-sense-glow tracking-wide">Gemini 3 Pro</span>
               </div>
            )}
         </div>

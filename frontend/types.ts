@@ -9,6 +9,7 @@ export interface SongMetadata {
   artist: string;
   tuning: string;
   bpm: string;
+  note: string;
 }
 
 export interface User {

@@ -203,7 +203,7 @@ export const TabDisplay: React.FC<TabDisplayProps> = ({ tabFile, metadata, onNew
            </div>
            <div className="flex items-center gap-2">
              <div className="w-1.5 h-1.5 rounded-full bg-sense-accent animate-pulse"></div>
-             <span>Gemini 2.5 Flash Engine</span>
+             <span>Gemini 3 Pro Engine</span>
            </div>
         </div>
       </div>

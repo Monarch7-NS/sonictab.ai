@@ -4,7 +4,7 @@ import { Play, Pause, Volume2, ArrowLeft, Search, Key, ArrowRight, Wand2 } from 
 interface SongConfigurationProps {
   file: File;
   onBack: () => void;
-  onStart: (metadata: { title: string; artist: string; tuning: string; bpm: string }) => void;
+  onStart: (metadata: { title: string; artist: string; tuning: string; bpm: string; note: string; }) => void;
 }
 
 const SUGGESTED_TUNINGS = [
@@ -23,6 +23,7 @@ export const SongConfiguration: React.FC<SongConfigurationProps> = ({ file, onBa
   const [title, setTitle] = useState("");
   const [artist, setArtist] = useState("");
   const [bpm, setBpm] = useState("");
+  const [note, setNote] = useState("");
   
   // Audio Player State
   const [isPlaying, setIsPlaying] = useState(false);
@@ -163,6 +164,16 @@ export const SongConfiguration: React.FC<SongConfigurationProps> = ({ file, onBa
                   className="w-full bg-[#0f111a] border border-white/10 rounded-xl px-4 py-3 text-slate-200 placeholder:text-slate-600 focus:outline-none focus:border-sense-accent/50 focus:ring-1 focus:ring-sense-accent/50 transition-all"
                 />
               </div>
+              <div className="md:col-span-2">
+                <label className="block text-xs text-slate-500 mb-1.5 ml-1">Note for Gemini (Optional)</label>
+                <textarea
+                  value={note}
+                  onChange={(e) => setNote(e.target.value)}
+                  placeholder="e.g. The guitarist uses a capo on the 2nd fret in the live version."
+                  className="w-full bg-[#0f111a] border border-white/10 rounded-xl px-4 py-3 text-slate-200 placeholder:text-slate-600 focus:outline-none focus:border-sense-accent/50 focus:ring-1 focus:ring-sense-accent/50 transition-all"
+                  rows={2}
+                />
+              </div>
            </div>
         </div>
 
@@ -175,7 +186,7 @@ export const SongConfiguration: React.FC<SongConfigurationProps> = ({ file, onBa
             <ArrowLeft className="w-5 h-5" />
           </button>
           <button 
-            onClick={() => onStart({ title, artist, tuning, bpm })}
+            onClick={() => onStart({ title, artist, tuning, bpm, note })}
             className="flex-1 h-12 bg-gradient-to-r from-sense-accent to-indigo-600 hover:to-indigo-500 text-white font-bold rounded-xl flex items-center justify-center gap-2 shadow-lg shadow-sense-accent/25 transition-all hover:shadow-sense-accent/40 hover:-translate-y-0.5"
           >
             <Key className="w-4 h-4" />
