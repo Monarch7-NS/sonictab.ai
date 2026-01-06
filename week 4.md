@@ -7,7 +7,7 @@
 - Connected application to live MongoDB database using mongoose
 - Implemented automated admin seeding logic that creates default admin credentials (admin/admin) on server startup
 - Configured Vite proxy to route `/api` requests to backend (port 5000), resolving CORS issues
-- Developed `safeFetch` utility in `services/backend.ts` to handle non-JSON error responses and prevent frontend crashes
+- Developed `safeFetch`autility in `services/backend.ts` to handle non-JSON error responses and prevent frontend crashes
 - Implemented `.env` file support for secure API_KEY and MONGODB_URI configuration
 - Fixed critical module import conflicts by removing manual importmap from `index.html`
 - Refactored API routes to ensure consistent JSON error responses (500/400 status codes)
