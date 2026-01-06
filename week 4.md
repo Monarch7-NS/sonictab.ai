@@ -72,6 +72,9 @@ Frontend:
 - Fix module resolution conflicts in index.html
 
 Documentation:
+
+
+utilisation de ia pour faire la documentation en language latex
 - Add comprehensive System Architecture Report (Week 4)
 
 BREAKING CHANGE: Backend now requires MongoDB instance and .env configuration"
